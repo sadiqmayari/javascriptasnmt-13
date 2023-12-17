@@ -103,3 +103,33 @@ pastYear.setFullYear(passedYear - 100);
 document.write("Current date and time: " +currentDate)
 document.write("<br>")
 document.write("1 hour ago, it was  " + pastYear);
+
+document.write("<br><br>")
+
+//user birth year
+
+var userAge = parseInt(prompt("What is Your Age?"));
+
+pastYear.setFullYear(passedYear-userAge)
+alert("Your age is :"+userAge+"\nYour Birth Year is: "+pastYear.getFullYear())
+
+
+
+document.write("<br><br>")
+
+
+document.write("<h2>K.Electric Bill </h2>")
+
+var numberOfUnits= 210
+var chargesPerUnit = 38
+var netAmount = numberOfUnits*chargesPerUnit
+var lateSurcharge = 350
+var grossAmount = netAmount+lateSurcharge
+
+document.write("Customer Namer: Muhammad Sadiq<br>")
+document.write( "Month: "+currentDate.toLocaleString(`default`,{month:`long`})+"<br>")
+document.write("Number of Units: "+ numberOfUnits+"<br>")
+document.write("Charges Per Unit: "+chargesPerUnit+"<br><br>" )
+document.write("Net Amount Payable (Within Due Date)"+netAmount+"<br>")
+document.write("Late Surcharge: "+lateSurcharge+"<br>")
+document.write("Gross Amount Payabel (after due date): "+grossAmount)
